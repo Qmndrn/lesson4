@@ -6,14 +6,14 @@ def get_shelfs_book(new_shelfs):
         authors = input("Введите автора книги: ")
         shelfs_format = "{'book_name': name_book, 'authors': authors}"
 
-        with open("/home/mndrn/Рабочий стол/vscode/4lessonlesson/library.txt", "a") as f:
+        with open("library.txt", "a") as f:
             f.write(f"Shelf_{shelf_number}: {shelfs_format}\n")
 
     return "Книги добавлены"
 
 
 def read_file_library():
-    with open("/home/mndrn/Рабочий стол/vscode/4lessonlesson/library.txt", "r") as f:
+    with open("library.txt", "r") as f:
         for line in f:
             print(line.strip())
 
