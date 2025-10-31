@@ -1,6 +1,6 @@
 
 def get_shelfs_book(new_shelfs):
-    for i in range(new_shelfs):
+    for shelf_number in range(new_shelfs):
         shelf_number = int(input("Куда вы хотите поставить книгу?: "))
         name_book = input("Введите название книги: ")
         authors = input("Введите автора книги: ")
